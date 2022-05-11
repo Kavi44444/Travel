@@ -1,1 +1,8 @@
-<p>login works!</p>
+<div>
+    <label class="form-control">Name</label>
+    <input type="text" [(ngModel)]="user.empname" class="form-control" >
+    <label class="form-control">Password</label>
+    <input type="password" class="form-control" [(ngModel)]="this.user.password">
+    <button (click)="login()" class="btn btn-success">Login</button>
+    <button (click)="reset()" class="btn btn-danger">Cancel</button>
+</div>

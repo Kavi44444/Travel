@@ -1,15 +1,19 @@
+
+
 export class Register{
     
-    public  EId:number=0;
-    public  Empname :string="";
-    public  Password :string="";
-    public  Token :string="";
-    public  Role :string="";
-    public  ManagerId :number=0;
-    public  Age :number=0;
-    public  Mobile :number=0;
-    public  Email :string="";
-    public  Region :string="";
+    public  eId:number=0;
+    public  empname :string="";
+    public  password :string="";
+    public  token :string="";
+    public  role :string="";
+    public  managerId :number=0;
+    public  age :number=0;
+    public  mobile :number=0;
+    public  email :string="";
+    public  region :string="";
+    public  dob: number=0;
+    public dept:string="";
 
 
 }
