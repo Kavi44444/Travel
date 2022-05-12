@@ -10,8 +10,8 @@ export class Login{
         public  mobile :number=0,
         public  email :string="",
         public  region :string="",
-        // public  dob:number=0,
-        // public dept:string=""
+        public  dob: string="",
+        public dept:string=""
         ){
     }
     

@@ -9,6 +9,7 @@ import { MenuComponent } from './menu/menu.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';
 import { TravelComponent } from './travel/travel.component';
+import { ViewsComponent } from './views/views.component';
 
 const routes: Routes = [
   {path:'login',component:LoginComponent},
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'hr',component:HrComponent},
   {path:'travel',component:TravelComponent},
   {path:'manager',component:ManagerComponent},
-  {path:'dept',component:DeptComponent}
+  {path:'dept',component:DeptComponent},
+  {path:'views',component:ViewsComponent}
 ];
 
 @NgModule({

@@ -18,6 +18,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileComponent } from './profile/profile.component';
 import { DeptComponent } from './dept/dept.component';
+import { ViewsComponent } from './views/views.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { DeptComponent } from './dept/dept.component';
     TravelComponent,
     MenuComponent,
     ProfileComponent,
-    DeptComponent
+    DeptComponent,
+    ViewsComponent
   ],
   imports: [
     BrowserModule,

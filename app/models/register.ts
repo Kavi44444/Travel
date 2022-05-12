@@ -12,7 +12,7 @@ export class Register{
     public  mobile :number=0;
     public  email :string="";
     public  region :string="";
-    public  dob: number=0;
+    public  dob: string="";
     public dept:string="";
 
 

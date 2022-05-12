@@ -1,8 +1,26 @@
-<div>
-    <label class="form-control">Name</label>
-    <input type="text" [(ngModel)]="user.empname" class="form-control" >
-    <label class="form-control">Password</label>
-    <input type="password" class="form-control" [(ngModel)]="this.user.password">
-    <button (click)="login()" class="btn btn-success">Login</button>
-    <button (click)="reset()" class="btn btn-danger">Cancel</button>
+<div class="wrapper">
+    <div class="logo">
+        <img src="../assets/images/logo.jpg" alt="">
+        
+    </div>
+    <br>
+    <br>
+    <h3 style="padding-left:100px ;font: weight 800;">TRAVEL-PORTAL</h3>
+    <div class="padding bottom:40px;"></div>
+
+    <br>
+    <div class="container mt-2"></div>
+    <form class="p-3 mt-3">
+        <div class="form-field d-flex align-items-center">
+            <span class="far fa-user"></span>
+            <input style="font-size: 1rem;" type="text" name="Empname" [(ngModel)]="user.empname" placeholder="Empname">
+        </div>
+        <div class="form-field d-flex align-items-center">
+            <span class="fas fa-key"></span>
+            <input style="font-size: 1rem;" type="password" name="Password" [(ngModel)]="user.password" placeholder="Password">
+        </div>
+        <br>
+        <button (click)="login()"  class="btn mt-3" style="width: 100px; margin-left: 80px;">Login</button>
+        <button (click)="reset()"  class="btn mt-3" style="width: 100px; margin-left: 80px;">Cancel</button>
+    </form>
 </div>

@@ -1,0 +1,37 @@
+<h1><span>Registered Employees</span></h1>
+<!-- <div class="d-flex justify-content-center">
+<div class="spinner-border" role="status" >
+    <span class="sr-only" id="loading">Loading...</span>
+</div>
+</div> -->
+<table class="table" id='tab'>
+    <thead>
+    <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">Role</th>
+        <th scope="col">Dept</th>
+        <th scope="col">DOB</th>
+        <th scope="col">MId</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Email</th>
+        <th scope="col">Region</th>
+        
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let e of views">
+        <td>{{ e.eId}}</td>
+        <td>{{ e.empname}}</td>
+        <td>{{ e.age}}</td>
+        <td>{{ e.role}}</td>
+        <td>{{ e.dept}}</td>
+        <td>{{ e.dob }}</td>
+        <td>{{ e.managerId}}</td>
+        <td>{{ e.mobile}}</td>
+        <td>{{ e.email}}</td>
+        <td>{{ e.region }}</td>
+    </tr>
+    </tbody>
+</table>  

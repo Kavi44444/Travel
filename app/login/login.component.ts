@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
       //this.router.navigateByUrl("login");
       }
       else{
-      var usr=sample as Register;
+      var usr=sample as Login;
       if(usr.role=='employee')
       {
       localStorage.setItem("id",JSON.stringify(usr.eId));

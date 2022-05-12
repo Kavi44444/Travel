@@ -4,6 +4,7 @@ body{
     left:600px;
     height: 50%;
     width: 20%;
+    background-image: none;
 }
 div{
  margin-left: 110px;

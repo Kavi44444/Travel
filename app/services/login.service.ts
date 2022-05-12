@@ -13,4 +13,7 @@ export class LoginService{
         return this.httpClient.post("http://localhost:50586/api/User/Login",user);
     }
 
+    getviews(){
+        return this.httpClient.get("http://localhost:50586/api/User");
+    }
 }
