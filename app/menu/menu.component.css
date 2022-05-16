@@ -11,6 +11,10 @@ header{
     background-size: cover;
     position: relative;
 }
+
+img{
+    height: 60px;
+}
 .logo{
     color: #fabd02;
     font-size: 32px;

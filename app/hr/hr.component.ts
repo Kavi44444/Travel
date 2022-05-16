@@ -12,7 +12,7 @@ export class HrComponent implements OnInit {
 name:any;
   constructor(private router:Router,private dialogRef:MatDialog) {
     this.name=localStorage.getItem("uname");
-    if(this.name=="null")
+    if(this.name==null)
     this.router.navigateByUrl("");
    }
    register(){

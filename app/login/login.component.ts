@@ -93,7 +93,8 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("dept",usr.dept);
         this.router.navigateByUrl("travel");
       }
-      else{
+      else if(usr.role=='dept')
+      {
         localStorage.setItem("id",JSON.stringify(usr.eId));
         localStorage.setItem("uname",usr.empname);
         localStorage.setItem("email",usr.email);

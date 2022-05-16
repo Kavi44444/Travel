@@ -19,6 +19,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProfileComponent } from './profile/profile.component';
 import { DeptComponent } from './dept/dept.component';
 import { ViewsComponent } from './views/views.component';
+import { RequestComponent } from './request/request.component';
+import { RequestService } from './services/request.service';
+import { ApprovalComponent } from './approval/approval.component';
 
 
 @NgModule({
@@ -33,7 +36,9 @@ import { ViewsComponent } from './views/views.component';
     MenuComponent,
     ProfileComponent,
     DeptComponent,
-    ViewsComponent
+    ViewsComponent,
+    RequestComponent,
+    ApprovalComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,7 @@ import { ViewsComponent } from './views/views.component';
     MatDialogModule,
     BrowserAnimationsModule
   ],
-  providers: [RegisterService,LoginService],
+  providers: [RegisterService,LoginService,RequestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

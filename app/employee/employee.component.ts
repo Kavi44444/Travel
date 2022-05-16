@@ -22,7 +22,9 @@ export class EmployeeComponent implements OnInit {
    open(){
     this.dialogRef.open(ProfileComponent);
    }
-   
+   request(){
+     this.router.navigateByUrl("request");
+   }
    logout(){
       localStorage.clear();
       this.router.navigateByUrl("");

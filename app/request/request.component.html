@@ -1,0 +1,61 @@
+<div class="main">
+    <div class="container mt-3">
+        <div class="signup-content">
+            <div class="signup-img">
+                <img class="mt-3 ml-1 mr-4" src="../../assets/images/emp2.jpeg" alt="">
+                <div class="signup-img-content">
+                </div>
+            </div>
+            <div class="container mt-4">
+            <div class="signup-form">
+                    <div class="ml-4 form-row">
+                        <div class="form-group">
+                            <!-- <div class="form-input">
+                                <label for="name" class="required">Employee Name</label>
+                                <input type="text" name="name" [(ngModel)] = "request.empname"/>
+                            </div> -->
+                            <div class="label-flex">
+                                <label for="payment">Location Type</label>
+                            </div>
+                            <select class="ipt frm1" [(ngModel)]="request.isLocal">
+                                <option value="domestic">Domestic</option>
+                                <option value="international">International</option>
+                                <div class="container mt-3"></div>
+                            </select>
+                            <div class="form-input">
+                                <label for="email" class="required">Location</label>
+                                <input type="text" name="email"  [(ngModel)] = "request.loc"/>
+                            </div>
+                            <div class="form-input">
+                                <label for="email" class="required">One Time (OR) Routine</label>
+                                <input type="text" name="email"  [(ngModel)] = "request.isOne"/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <!-- <div class="form-input">
+                                <label for="ndays">Employee Id </label>
+                                <input type="number" [(ngModel)] = "request.eid "/>
+                            </div> -->
+                            <div class="form-input">
+                                <label for="fdate">From Date</label>
+                                <input type="date"  [(ngModel)] = "request.fromDate"/>
+                            </div>
+                            <div class="form-input">
+                                <label for="tdate">To Date</label>
+                                <input type="date"  [(ngModel)] = "request.toDate"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-submit">
+                        <button  class="btn btn-success" (click)="AddRequest()">Submit</button>
+                        <div class="container mt-2"></div>
+                    </div>
+                    <div class="form-submit">
+                        <button  class="btn btn-success" (click)="reset()" >Cancel</button>
+                        <div class="container mt-2"></div>
+                    </div>
+                    <div class="container mt-2"></div>
+            </div>
+        </div>
+    </div>
+</div>

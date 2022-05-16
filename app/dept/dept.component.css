@@ -1,3 +1,7 @@
+#divCart{
+    float: right;
+}
+
 .btn{
     text-transform: capitalize;
     text-decoration: none;
@@ -5,4 +9,22 @@
     padding: 10px 20px;
     border-radius: 30px;
    
+}
+img{
+    height: 60px;
+    margin-left:-100px;
+}
+
+.nav{
+    text-transform: capitalize;
+    width: 85%;
+    height: 15%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.nav-item{
+   margin: 5px;
 }
