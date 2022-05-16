@@ -5,7 +5,7 @@ export class Request{
         public  empname :string="",
         public  loc :string="",
         public  isLocal :string="",
-        public  isOne:string="",
+        public  nDays:number=0,
         public  fromDate :string="",
         public  toDate :string="",
         public  mApproval:string="",

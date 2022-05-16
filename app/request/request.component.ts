@@ -11,20 +11,20 @@ import { Request } from "../models/request";
 export class RequestComponent implements OnInit {
   request:Request;
   role:any;
-  id:any;
-  name:any;
+  // id:any;
+  // name:any;
 
   constructor(private requestservice:RequestService,
     private router:Router) {
       this.request=new Request();
       //this.role=localStorage.getItem("role");
-      this.id=localStorage.getItem("id");
-      this.name=localStorage.getItem("uname");
+      // this.id=localStorage.getItem("id");
+      // this.name=localStorage.getItem("uname");
      }
 
      AddRequest(){
-       this.request.eid=this.id;
-       this.request.empname=this.name;
+      //  this.request.eid=this.id;
+      //  this.request.empname=this.name;
        this.request.mApproval="Processing";
        this.request.dApproval="Processing";
       this.requestservice.EmployeeRequest(this.request).subscribe(sample=>{
