@@ -1,5 +1,6 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
+import { Observable } from "rxjs";
 import { Request } from "../models/request";
 
 
@@ -45,6 +46,9 @@ export class RequestService{
 
     
     getAllEmployee(){
-        return this.httpClient.get("http://localhost:54465​/api/Request/GetAll_Travel");
+        return this.httpClient.get("http://localhost:50586/api/Request/GetAll_Travel");
+    }
+    getSingleEmployee(request:Request):Observable<Request[]>{
+        return this.httpClient.post<Request[]>("http://localhost:50586/api/Request/GetEmployeeById",request);
     }
 }

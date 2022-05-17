@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
-//import { sample } from 'rxjs';
-import { Login } from '../models/login';
+import { Request } from '../models/request';
 import { ProfileComponent } from '../profile/profile.component';
+import { RequestService } from '../services/request.service';
 
 @Component({
   selector: 'app-employee',
@@ -12,8 +12,15 @@ import { ProfileComponent } from '../profile/profile.component';
 })
 export class EmployeeComponent implements OnInit {
   name:any;
-  constructor(private dialogRef:MatDialog,private router:Router) {
+  id:any;
+  show:boolean=false;
+  data:any=[]; 
+  e:Request;
+  constructor(private dialogRef:MatDialog,private router:Router,
+   private requestservice:RequestService ) {
+     this.e=new Request();
    this.name=localStorage.getItem("uname");
+   this.id=localStorage.getItem("id");
    if(this.name==null)
    {
      this.router.navigateByUrl("");
@@ -24,6 +31,19 @@ export class EmployeeComponent implements OnInit {
    }
    request(){
      this.router.navigateByUrl("request");
+   }
+   status(){
+     this.e.eid=this.id;
+    this.requestservice.getSingleEmployee(this.e).subscribe((sample)=>{
+      console.log(sample);
+     this.data=sample;
+     console.log(this.data);      
+     });
+     this.show=!this.show;
+   }
+   trues()
+   {
+     this.show=!this.show;
    }
    logout(){
       localStorage.clear();

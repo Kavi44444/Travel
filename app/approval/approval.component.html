@@ -6,7 +6,7 @@
         <th scope="col">Name</th>
         <th scope="col">Location</th>
         <th scope="col">IsLocal</th>
-        <th scope="col">Isone</th>
+        <th scope="col">NDays</th>
         <th scope="col">From Date</th>
         <th scope="col">To Date</th>
     </tr>
@@ -17,7 +17,7 @@
         <td>{{ e.empname}}</td>
         <td>{{ e.loc}}</td>
         <td>{{ e.isLocal }}</td>
-        <td>{{ e.isOne }}</td>
+        <td>{{ e.nDays }}</td>
         <td>{{ e.fromDate}}</td>
         <td>{{ e.toDate}}</td>
         <button class="btn btn-primary" (click)="Ok(e)" >Approve</button>

@@ -7,7 +7,7 @@
           <a class="btn" (click)="request()">Request</a>
         </li>
         <li class="nav-item">
-          <a class="btn"  >Status</a>
+          <a class="btn" (click)="status()" >Status</a>
         </li>
         <li class="nav-item">
             <a class="btn" (click)="logout()">Logout</a>
@@ -16,5 +16,31 @@
 <a class="btn" (click)="open()"  >{{name}}</a>
      
     </div>
-
+<div *ngIf="show">
+  <table class="table" id='tab'>
+    <thead>
+    <tr>
+        <th scope="col">Location</th>
+        <th scope="col">IsLocal</th>
+        <th scope="col">NDays</th>
+        <th scope="col">From Date</th>
+        <th scope="col">To Date</th>
+        <th scope="col">Manager Approval</th>
+        <th scope="col">Department Approval</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr >
+        <td>{{ data.loc}}</td>
+        <td>{{ data.isLocal }}</td>
+        <td>{{ data.nDays }}</td>
+        <td>{{ data.fromDate}}</td>
+        <td>{{ data.toDate}}</td>
+        <td>{{ data.mApproval}}</td>
+        <td>{{ data.dApproval}}</td>
+    </tr>
+    </tbody>
+</table>  
+<span class="btn" (click)="trues()">Close</span>
+</div>
   
